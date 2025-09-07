@@ -1,5 +1,5 @@
 require "pry-byebug"
-require "psl_domain_extractor"
+require "psl-domain-extractor"
 
 if ENV["COVERAGE"]
   require "simplecov"

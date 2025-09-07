@@ -1,5 +1,5 @@
-require "psl_domain_extractor/extractors"
-require "psl_domain_extractor/public_suffix_list"
+require "psl-domain-extractor/extractors"
+require "psl-domain-extractor/public_suffix_list"
 
 module PslDomainExtractor
   def self.extract_domain(domain)
@@ -31,7 +31,7 @@ module PslDomainExtractor
   end
 
   def self.rules_from_psl_file
-    PublicSuffixList.new(File.join("psl", "public_suffix_list.dat")).rules
+    PublicSuffixList.new(File.join(__dir__, "..", "psl", "public_suffix_list.dat")).rules
   end
   private_class_method :rules_from_psl_file
 end

@@ -1,6 +1,6 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "psl_domain_extractor/version"
+require "psl-domain-extractor/version"
 
 Gem::Specification.new do |s|
   s.name = "psl-domain-extractor"
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
     "Gemfile",
     "LICENSE",
     "README.md",
-    "psl_domain_extractor.gemspec"
+    "psl-domain-extractor.gemspec"
   ]
   s.require_paths = ["lib"]
   s.metadata = {
