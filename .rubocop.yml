@@ -17,6 +17,9 @@ Metrics/ParameterLists:
   Enabled: false
 Metrics/PerceivedComplexity:
   Enabled: false
+Naming/FileName:
+  Exclude:
+    - "lib/psl-domain-extractor.rb"
 Naming/MethodParameterName:
   Enabled: false
 Style/Documentation:
